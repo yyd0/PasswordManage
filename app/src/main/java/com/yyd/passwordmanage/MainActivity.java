@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
 
-        List<Info> infos = infoBox.query().build().find();
+        List<Info> infos = infoBox.query().orderDesc(Info_.createDate).build().find();
         adapter.setDatas(infos);
 
 

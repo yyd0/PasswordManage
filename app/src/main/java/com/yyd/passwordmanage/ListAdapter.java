@@ -79,8 +79,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     }
 
     public void addOne(Info info) {
-        datas.add(info);
-        notifyItemInserted(datas.size() - 1);
+        datas.add(0, info);
+        notifyItemInserted(0);
     }
 
     public void changeOne(InfoEditEvent event) {
