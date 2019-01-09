@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp">
+
+    <TextView
+        android:text="Google"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/tv_date"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:text="date"
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_height="48dp"
+        android:gravity="center_vertical|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:text="accont"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="password"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_account" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="通用设置">
+        <SwitchPreference
+            android:key="gesture"
+            android:summary="启动应用的时候输入设定好的手势密码"
+            android:title="开启手势密码" />
+
+        <SwitchPreference
+            android:key="visible"
+            android:summary="打开状态下，首页密码可见"
+            android:title="列表密码可见" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

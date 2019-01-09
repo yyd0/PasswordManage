@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">忘不了</string>
+    <string name="action_settings">设置</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">确认</string>
+    <string name="name_empty">名称不能为空</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="name">名称</string>
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="action_add">添加</string>
+    <string name="add_success">添加成功</string>
+    <string name="setting">设置</string>
+    <string name="password_short">图案太短</string>
+    <string name="password_wrong">绘制错误</string>
+    <string name="draw_again">请再次绘制</string>
+    <string name="password_not_same">两次绘制不一致</string>
+    <string name="draw_password">请绘制解锁图案</string>
+    <string name="action_edit">编辑</string>
+    <string name="edit_success">修改成功</string>
+</resources>
