@@ -65,7 +65,7 @@ public class EditActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 String s1 = s.toString();
                 if (TextUtils.isEmpty(s1)) {
-                    etName.setError("名称不能为空");
+                    etName.setError(getText(R.string.name_empty));
                     btAdd.setEnabled(false);
 
                 } else {
@@ -89,7 +89,7 @@ public class EditActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 String s1 = s.toString();
                 if (TextUtils.isEmpty(s1)) {
-                    etAccount.setError("账号不能为空");
+                    etAccount.setError(getText(R.string.account_empty));
                     btAdd.setEnabled(false);
 
                 } else {
@@ -113,7 +113,7 @@ public class EditActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 String s1 = s.toString();
                 if (TextUtils.isEmpty(s1)) {
-                    etPassword.setError("密码不能为空");
+                    etPassword.setError(getText(R.string.password_empty));
                     btAdd.setEnabled(false);
 
                 } else {
