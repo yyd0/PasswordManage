@@ -3,6 +3,7 @@ package com.yyd.passwordmanage;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,7 +56,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         String dateStr = simpleDateFormat.format(info.getCreateDate());
         viewHolder.tvDate.setText(dateStr);
         viewHolder.itemView.setOnLongClickListener(v -> {
-            deleteOne(info, i);
+            new AlertDialog.Builder(context)
+                    .setMessage(R.string.message_delete)
+                    .setNegativeButton(R.string.action_cancel, null)
+                    .setPositiveButton(R.string.action_ok, (dialog, which) -> deleteOne(info, i)).create().show();
             return false;
         });
         viewHolder.itemView.setOnClickListener(v -> {

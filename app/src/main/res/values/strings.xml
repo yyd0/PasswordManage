@@ -19,4 +19,5 @@
     <string name="action_edit">编辑</string>
     <string name="edit_success">修改成功</string>
     <string name="account_empty">账号不能为空</string>
+    <string name="message_delete">确认删除?</string>
 </resources>

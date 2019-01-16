@@ -20,7 +20,7 @@ public class LockActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean gesture = sharedPreferences.getBoolean("gesture", true);
+        boolean gesture = sharedPreferences.getBoolean("gesture", false);
         if (gesture) {
             setContentView(R.layout.activity_lock);
             TextView textView = (TextView) findViewById(R.id.tv_tip);
